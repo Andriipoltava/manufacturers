@@ -4,4 +4,19 @@
 
 
 $purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+$primary: #7BB66E;  // Once we've changed the value, we'll also make it the primary brand color.
+$secondary:#F5F8FF;
+$dark:#0C0C30;
+$navbar-light-color:$dark;
+
+//
+$h1-font-size:56px;
+$h2-font-size:38px;
+$h3-font-size:28px;
+$h4-font-size:24px;
+$h5-font-size:20px;
+$badge-font-size:16px;
+
+$font-family-base:'e-Ukraine';
+
+$headings-font-family:$font-family-base;

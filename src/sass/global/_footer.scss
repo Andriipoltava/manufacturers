@@ -1,0 +1,24 @@
+
+.custom-cursor {
+
+}
+
+#footer-menu {
+
+
+}
+
+#wrapper-footer {
+
+}
+
+.copyright__footer {
+  p, a {
+    @include media-breakpoint-down(sm) {
+      font-size: 12px;
+      line-height: 27px;
+    }
+    margin-bottom: 0;
+  }
+}
+

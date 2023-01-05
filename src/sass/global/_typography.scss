@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('../fonts/BasierCircle/BasierCircle-BoldItalic.eot');
+  src: local('Basier Circle Bold Italic'), local('BasierCircle-BoldItalic'),
+  url('../fonts/BasierCircle/BasierCircle-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BasierCircle/BasierCircle-BoldItalic.woff2') format('woff2'),
+  url('../fonts/BasierCircle/BasierCircle-BoldItalic.woff') format('woff'),
+  url('../fonts/BasierCircle/BasierCircle-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+@include media-breakpoint-between(sm,xxl){
+
+}
+
+
+
+
+
+.space-grotesk-Medium {
+  font-family: "Space Grotesk Medium";
+}
+.space-grotesk-SemiBold {
+  font-family: "Space Grotesk SemiBold";
+}
+
+.space-grotesk-Bold {
+  font-family: "Space Grotesk Bold";
+}
+.space-grotesk {
+  font-family: "Space Grotesk";
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-simebold {
+  font-weight: 600;
+}

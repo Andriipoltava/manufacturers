@@ -1,0 +1,109 @@
+
+#main-menu {
+  .dropdown-menu {
+    //min-width: 230px;
+    //box-shadow: 1px 4px 7px #b2b2b2b8;
+    //background: #ffffffd4;
+    //top: 115%;
+
+    a {
+      &:hover, &:focus {
+        color: $primary;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .nav-link {
+    font-weight: 400;
+  }
+
+
+  .dropdown-toggle {
+    &::after {
+      border: solid black;
+      border-width: 0 1px 1px 0;
+      padding: 3px;
+      transform: rotate(45deg);
+      margin-left: 10px;
+
+    }
+
+    &.show {
+      &::after {
+        transform: rotate(-135deg);
+        margin-bottom: -4px;
+      }
+    }
+  }
+
+  .dropdown-submenu {
+    position: relative;
+
+    .dropdown-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .dropdown-item {
+      &:after {
+        width: 20px;
+        height: 20px;
+        border: none;
+        margin-left: 10px;
+        transform: rotate(0);
+
+        background-size: 110%;
+        background-position: -5%, -5%;
+        margin-bottom: 0;
+        transition: all .3s;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'%3E%3C/path%3E%3C/svg%3E");
+      }
+
+      &.show {
+        &:after {
+          transform: rotate(45deg);
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      position: static !important;
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+      padding: 0 0 0 15px;
+      display: block;
+      height: 0;
+      visibility: hidden;
+      overflow: hidden;
+
+      &.show {
+        height: auto;
+        visibility: visible;
+        overflow: visible;
+      }
+
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    .dropdown-menu {
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+    }
+
+  }
+}
+
+.dropdown-menu {
+  .active {
+    .dropdown-item {
+      color: #00CC66;
+    }
+  }
+}
